@@ -1,0 +1,44 @@
+<script>
+    const PARKING_PLACES = 7;
+    let freePlace = 3;
+
+    let decor = "";
+    for (let x = 1 ; x <= PARKING_PLACES * 5; x++ ) {
+    decor += "#";
+}
+    console.log(decor);
+
+    let places = "";
+    for (let x = 1; x <= PARKING_PLACES; x++) {
+        if (x === 3) {
+            places += "|   |";
+        } else { 
+            places += "| X |";
+        }   
+    }
+    console.log(places);
+
+    decor = ""
+    for (let x = 1; x <= PARKING_PLACES * 5; x++) {
+        decor += "#";
+    }
+    console.log(decor);
+
+    /* Raspuns la intrebari:
+       1) decor - a fost nevoie pentru a afisa in consola simbolul '#' ca un string,
+                  cu ajutorul ciclului 'for' la fiecare ciclul ii se mai atribuia cite un '#' 
+                  lui variabila decor pina cind a ajuns x = 36 si ciclul sa oprit.
+          places - a fost nevoie pentru a marca locurile de parcare ,prin conditia impusa 
+                   ciclului 'for' sa atribuit 7 locuri .
+
+       2) Cele doua variabile s-au declarat pina la cicluri deoare ce 
+          sunt niste variabile globale si este nevoie sa le utilizam si in 
+          interiorul blocului ciclului .
+        
+       3) const - este o variabila constanta ea nu poate sa-si schimbe valoarea 
+                  de aia si se numneste const. Numele dat variabilei este o 
+                  practica buna de a fi scris cu litere mari pentru a fi 
+                  identificat usor in cod. 
+    */
+</script>
+
