@@ -1,0 +1,40 @@
+<script>
+    
+    /*
+     La variabila declarata 'n' ii este atrinuita valoarea 1 , trebuie sa fim foarte 
+    atenti la ce tip de variabila folosim pentru ca n va fi o variabila care 
+    isi va schimba valoarea.
+    */
+    let n = 1
+    /* 
+    In bucla While care urmeaza mai intii se verifica conditia (n <= 10) adica:    
+    (1 <= 10) = true -> codul din interiorul bulclei se executa:                     output: 1
+                        - console.log(1) -> afiseaza 1 in consola;                           2
+                        - n++ -> ii mareste valoarea lui n cu 1 si n = 2;                    3
+                                                                                             4
+    (2 <= 10) = true -> - se afiseaza 2;                                                     5
+                        - 2++ = 3;                                                           6
+              .                                                                              7
+              .                                                                              8   
+              .                                                                              9
+    (9 <= 10) = true -> - se afiseaza 9;                                                     10
+                        - 9++ = 10;
+                        
+    (10 <= 10) = true -> -se afiseaza 10 ;
+                         - 10++ = 11;
+            
+    (11 <= 10) = false -> bucla se stopeaza sa execute codul deoarece conditia este false.
+    */
+    while (n <=10 ) {
+    console.log( n )
+    n++
+    }
+
+    // Pentru actiunea inversa 
+    let m = 10;
+
+    while (m >= 1) {
+        console.log(m);
+        m--
+    }
+</script>
