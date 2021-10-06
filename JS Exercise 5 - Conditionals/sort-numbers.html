@@ -1,0 +1,23 @@
+<script>
+    let a = parseInt(prompt('Enter first number:'));
+    let b = parseInt(prompt('Enter second number:'));
+    let c = parseInt(prompt('Enter therth number:'));
+
+    let descendingOrder = [];
+
+    if (a >= b && a >= c && b >= c) {
+        descendingOrder.push(a, b, c);
+    } else if (a >= b && a >= c && b <= c) {
+        descendingOrder.push(a, c, b);
+    } else if (b >= a && b >= c && a >= c) {
+        descendingOrder.push(b, a, c);
+    } else if (b >= a && b >= c && a <= c) {
+        descendingOrder.push(b, c, a);
+    } else if (c >= a && c >= b && a >= b) {
+        descendingOrder.push(c, a, b);
+    } else if (c >= a && c >= b && a <= b) {
+        descendingOrder.push(c, b, a);
+    }
+
+    console.log(descendingOrder);
+</script>
