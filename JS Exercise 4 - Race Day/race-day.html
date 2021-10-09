@@ -1,0 +1,33 @@
+<script>
+    //Assign a integer random number between 0..1000
+    let  raceNumber = Math.floor(Math.random() * 1000);
+
+    //I declared a variable witch have Boolean value and  indicates whether a runner registered early or not.
+    let runnerRegistEarlyOrLate = true;
+
+    //I declared a variable for the runner’s age and set it equal to a number.
+    let runnerAge = 19;
+
+    //Check whether the runner is an adult AND registered early.
+    if(runnerAge > 18 && runnerRegistEarlyOrLate == true) {
+        raceNumber += 1000; // Add 1000 to raceNumber if it's true.
+    }
+
+    //This statement will check age and registration time to determine race time.
+    if (runnerAge > 18 && runnerRegistEarlyOrLate == true) {
+        console.log(`Your race will be at 9:30 am. Your race number is: ${raceNumber}`);
+    } else if (runnerAge > 18 && runnerRegistEarlyOrLate == false) {
+        console.log(`Your race will be at 11:00 am. Your race number is: ${raceNumber}`);
+    } else if (runnerAge < 18) {
+        console.log(`Your race will be at 12:30 pm. Your race number is: ${raceNumber}`);
+    } else if (runnerAge === 18) { //if the runner is 18 years old I offered him the possibility to choose if he wants to be part of the adult team.
+        let wantToBePartOfAdult = false; // assign value to this variable the runner chooses which team he wants to be part of.
+        if (wantToBePartOfAdult == true && runnerRegistEarlyOrLate == true) {
+            console.log(`Your race will be at 9:30 am. Your race number is: ${raceNumber}`);
+        } else if (wantToBePartOfAdult == true && runnerRegistEarlyOrLate == false) {
+            console.log(`Your race will be at 11:00 am. Your race number is: ${raceNumber}`);
+        } else if (wantToBePartOfAdult == false) {
+            console.log(`Your race will be at 12:30 pm. Your race number is: ${raceNumber}`);
+        }
+    }
+</script>
