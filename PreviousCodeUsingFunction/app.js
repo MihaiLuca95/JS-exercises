@@ -79,13 +79,12 @@ const raceTime = (userAge, registeredEarly) => {
 
     //This statement will check age and registration time to determine race time.
     if (userAge >= 18 && registeredEarly == true) {
-        console.log(`Your race will be at 9:30 am. Your race number is: ${raceNumber}`);
+       return console.log(`Your race will be at 9:30 am. Your race number is: ${raceNumber}`);
     } else if (userAge >= 18 && registeredEarly == false) {
-        console.log(`Your race will be at 11:00 am. Your race number is: ${raceNumber}`);
+       return console.log(`Your race will be at 11:00 am. Your race number is: ${raceNumber}`);
     } else if (userAge < 18) {
-        console.log(`Your race will be at 12:30 pm. Your race number is: ${raceNumber}`);
+       return console.log(`Your race will be at 12:30 pm. Your race number is: ${raceNumber}`);
     }
-    return;
 }
 
 raceTime(23, true);
