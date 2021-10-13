@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Simple 2D String based game example</title>
+    <style>
+        body {background-color: #222; }
+        #gameMapContainer {
+            background-color: #333;
+            width: 300px;
+            height: 300px;
+            font-size: 55px;
+            font-family: monospace;
+            line-height: 30px;
+        }
+    </style>
+</head>
+<body>
+    
+    <div id="gameMapContainer">
+
+    </div>
+
+    <script src="./game.js"></script>
+    <!--
+        HW1: Why do we usually connect the script tag at the END of the BODY tag?
+
+        Answer: We should always add <script> tag at the end of the <body> tag 
+                to prevent unknown behaviors and make the webpage load faster.
+                Because HTML is loaded and executed line by line. So, when the 
+                browser encounters a <script> tag, it loads and executes 
+                the javascript code on the spot. This may slow down the page 
+                rendering speed and thus webpage will take more time to load.
+     -->
+</body>
+</html>
