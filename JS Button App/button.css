@@ -1,0 +1,39 @@
+.form {
+    border: 1px solid #999;
+    padding: 20px;
+}
+
+button {
+    cursor: pointer;
+    border-radius: 10px;
+}
+button,
+input {
+    padding: 20px;
+    margin: 10px 20px 0 0;
+}
+
+button.success {
+    background-color: green;
+    color: white
+}
+
+button.danger {
+    background-color: red;
+    color: white
+}
+
+button.warning {
+    background-color: orange;
+    color: white
+}
+
+button.disabled {
+    background-color: gray;
+    color: black
+}
+
+button.default {
+    background-color: white;
+    color: black
+}
