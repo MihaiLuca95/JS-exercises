@@ -1,0 +1,7 @@
+.flake {
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    border-radius: 100%;
+    color: transparent;
+}

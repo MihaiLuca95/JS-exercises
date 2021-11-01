@@ -1,0 +1,10 @@
+body {
+    background: #112;
+}
+
+#scene {
+    border: 1px dotted red;
+    width: 800px;
+    height: 700px;
+    position: relative;
+}
